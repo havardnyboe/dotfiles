@@ -3,7 +3,7 @@
 # INSTALL SCRIPT FOR DOTFILES
 
 # files to symlink in home
-files="bashrc gitconfig vimrc zshrc aliases"
+files="bashrc gitconfig vimrc zshrc"
 # directories to symlink in home
 dir="oh-my-zsh vim_runtime"
 
