@@ -1,11 +1,14 @@
 # Dotfiles
 This repository contains dotfiles with some of my settings and configurations
-## Install
-Make the install script executable 
+## Installation
+
+1. Clone the repo tp a hidden directory
+```zsh
+git clone https://github.com/eieioxyz/Beyond-Dotfiles-in-100-Seconds.git ~/.dotfiles && cd ~/.dotfiles
+```
+
+2. Run the install script 
 ```zsh
 chmod +x install.sh
-```
-Run the install script
-```zsh
 ./install.sh
 ```
