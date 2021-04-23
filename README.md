@@ -9,6 +9,5 @@ git clone https://github.com/eieioxyz/Beyond-Dotfiles-in-100-Seconds.git ~/.dotf
 
 2. Run the install script 
 ```zsh
-chmod +x install.sh
-./install.sh
+chmod +x install.sh && ./install.sh
 ```
