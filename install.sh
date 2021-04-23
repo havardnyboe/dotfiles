@@ -1,13 +1,22 @@
 #!/bin/bash
 
 # INSTALL SCRIPT FOR DOTFILES
-cd ~
 
-ln -s ~/.dotfiles/.oh-my-zsh ~/
-ln -s ~/.dotfiles/.vim_runtime ~/
-ln -s ~/.dotfiles/.bashrc ~/
-ln -s ~/.dotfiles/.gitconfig ~/
-ln -s ~/.dotfiles/.vimrc ~/  
-ln -s ~/.dotfiles/.zshrc ~/
+# files to symlink in home
+files="bashrc gitconfig vimrc zshrc"
+# directories to symlink in home
+dir="oh-my-zsh vim_runtime"
 
-clear
+cd ~/.dotfiles # change to dotfiles directory
+
+# creating symlink for files
+for file in ${files}; do 
+    echo "Creating symlink to $file in home directory."
+    ln -s ~/.dotfiles/.$file ~/.$file
+done
+
+# creating symlink for directories
+for d in ${dir}; do 
+    echo "Creating symlink to $d in home directory."
+    ln -s ~/.dotfiles/.$d ~/.
+done
