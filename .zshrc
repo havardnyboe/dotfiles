@@ -82,6 +82,7 @@ alias doc="cd ~/Documents"
 alias dt="cd ~/Desktop"
 alias update="sudo apt update"
 alias upgrade="sudo apt upgrade -y"
+alias mklatex="cp ~/.dotfiles/template/template.tex ./"
 # alias g="git"
 
 # Get week number
