@@ -8,10 +8,19 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/havardnyboe/.oh-my-zsh"
-ZSH_THEME="hvr"
+# eaf-magicxport ZSH="/home/havardnyboe/.oh-my-zsh"
+ZSH_THEME="hvr-af-magic"
 
 HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -37,7 +46,7 @@ zsh-syntax-highlighting
 zsh-autosuggestions
 )
 
-source $ZSH/oh-my-zsh.sh
+source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
 # User configuration
 
@@ -71,6 +80,8 @@ alias .....="cd ../../../.."
 alias dl="cd ~/Downloads"
 alias doc="cd ~/Documents"
 alias dt="cd ~/Desktop"
+alias update="sudo apt update"
+alias upgrade="sudo apt upgrade -y"
 # alias g="git"
 
 # Get week number

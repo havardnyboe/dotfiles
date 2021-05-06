@@ -1,7 +1,6 @@
-# af-magic.zsh-theme
+# af-magic.zsh-theme with modifications by https://github.com/havardnyboe
 # Repo: https://github.com/andyfleming/oh-my-zsh
 # Direct Link: https://github.com/andyfleming/oh-my-zsh/blob/master/themes/af-magic.zsh-theme
-
 
 # settings
 typeset +H return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
