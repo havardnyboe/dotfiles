@@ -16,3 +16,13 @@ chmod +x install.sh && ./install.sh
 ```zsh
 ln -s ~/.dotfiles/template/template.tex ./
 ```
+## Aliases
+|Alias|Command|
+|---|---|
+dl|`cd ~/Downloads`
+doc|cd ~/Documents
+dt|cd ~/Desktop
+update|sudo apt update
+upgrade|sudo apt upgrade -y
+mklatex|cp ~/.dotfiles/template/template.tex ./
+week|date +%V
