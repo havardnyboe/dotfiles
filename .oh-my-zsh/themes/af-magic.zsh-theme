@@ -1,6 +1,7 @@
-# af-magic.zsh-theme with modifications by https://github.com/havardnyboe
+# af-magic.zsh-theme
 # Repo: https://github.com/andyfleming/oh-my-zsh
 # Direct Link: https://github.com/andyfleming/oh-my-zsh/blob/master/themes/af-magic.zsh-theme
+
 
 # settings
 typeset +H return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
@@ -20,15 +21,14 @@ function afmagic_dashes {
 }
 
 # primary prompt
-# $FG[237]${(l.$(afmagic_dashes)..-.)}%{$reset_color%}
-# »    $FG[032]%c
-PS1='$FG[214]%n$(git_prompt_info)$(hg_prompt_info)$FG[105]%(!.#.$)%{$reset_color%} '
+PS1='$FG[237]${(l.$(afmagic_dashes)..-.)}%{$reset_color%}
+$FG[032]%~$(git_prompt_info)$(hg_prompt_info) $FG[105]%(!.#.»)%{$reset_color%} '
 PS2='%{$fg[red]%}\ %{$reset_color%}'
 RPS1='${return_code}'
 
 # right prompt
 (( $+functions[virtualenv_prompt_info] )) && RPS1+='$(virtualenv_prompt_info)'
-RPS1+=' $my_gray%~%{$reset_color%}%'
+RPS1+=' $my_gray%n@%m%{$reset_color%}%'
 
 # git settings
 ZSH_THEME_GIT_PROMPT_PREFIX="$FG[075]($FG[078]"
