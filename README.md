@@ -9,7 +9,7 @@ This repository contains dotfiles with some of my settings, configurations and t
 1. Clone the repo to a hidden directory
 
 ```zsh
-git clone https://github.com/havardnyboe/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
+git clone git@github.com:havardnyboe/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
 ```
 
 2. Run the install script
