@@ -3,13 +3,20 @@
 # |_  / __| '_ \| '__/ __|
 #  / /\__ \ | | | | | (__ 
 # /___|___/_| |_|_|  \___|
+#
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 # eaf-magicxport ZSH="/home/havardnyboe/.oh-my-zsh"
-ZSH_THEME="hvr-af-magic"
+#ZSH_THEME="hvr-af-magic"
 
 HYPHEN_INSENSITIVE="true"
 
@@ -80,9 +87,21 @@ alias .....="cd ../../../.."
 alias dl="cd ~/Downloads"
 alias doc="cd ~/Documents"
 alias dt="cd ~/Desktop"
-alias repos="cd ~/Documents/Repositories"
+alias repos="cd ~/Documents/repositories"
 alias mklatex="cp ~/.dotfiles/template/template.tex ./"
-# alias g="git"
+alias la="ls -a"
+# alias get_idf='. $HOME/esp/esp-idf/export.sh'
+alias rmdsstore='find . -name '.DS_Store' -type f -delete'
 
 # Get week number
 alias week='date +%V'
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval $(thefuck --alias)
