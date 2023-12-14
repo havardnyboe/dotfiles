@@ -2,11 +2,12 @@
 \documentclass[a4paper, 12pt]{article}  % DOKUMENTKLASSE
 \title{{\LaTeX} Dokument}               % TITTEL
 \author{Håvard Solberg Nybøe}           % FORFATTER
-\date{FAG -- \today}                    % DATO & FAG
+\date{\today}                           % DATO & FAG
 
+% Minimal preamble med nødvendige pakker
 \usepackage[english, norsk]{babel}      % NORSK SPRÅK
 \usepackage[
-    backend=biber,style=apa]{biblatex}  % BIBLIOGRAFI
+    backend=biber,style=ieee]{biblatex} % BIBLIOGRAFI
 \usepackage{csquotes}                   % PAKKE TIL BABEL
 \addbibresource{bibliografi.bib}        % PATH TIL BIBLIOGRAFI
 \usepackage[hidelinks]{hyperref}        % LENKER I TOC OG GENERELT
@@ -16,20 +17,19 @@
 \usepackage{graphicx}                   % BILDER \includegraphics[OPTIONS]{PATH}
 \usepackage{kantlipsum}                 % FYLLTEKST I KANT-STIL (kant[n-m])
 \usepackage{amsfonts,                   % BLACKBOARD BOLD FONT (\mathbb{N})
-amsmath,stmaryrd,amssymb}         % ANDRE MATTE PAKKER
-\usepackage{circuitikz}                 % LOGISKE PORTER OG KRETSER & TikZ
-\usepackage{import}                     % IMPORTER FILER (\import{PATH}{FILE})
+amsmath,stmaryrd,amssymb}               % ANDRE MATTE PAKKER
 \usepackage{caption}                    % PAKKE FOR BEDRE CAPTIONS I FIGURER
 \usepackage{float}                      % FLYTT FIGURER 
+\usepackage[UTF8]{ctex}                 % UTF8 TEGN
+\usepackage{minted}                     % KODEBLOKKER OG SLIKT
 % #endregion
+
 \begin{document}
 
 \maketitle
 % \tableofcontents % INNHOLDSFORTEGNELSE
 
-\begin{enumerate}
-    \item [\boxed{1}]
-\end{enumerate}
+\section{}
 
 % \printbibliography[heading=bibintoc] % LAGER BIBLIOGRAFI
 \end{document}
