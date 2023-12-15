@@ -1,0 +1,16 @@
+[user]
+	name = havardnyboe
+	email = 40893697+havardnyboe@users.noreply.github.com 
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[commit]
+	template = /Users/havardnyboe/.gitmessage
