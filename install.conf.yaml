@@ -1,13 +1,17 @@
-- clean: ['~']
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~' , '~/.config/nvim/lua/custom']
 
 - link:
-    ~/.profile: profile
     ~/.bashrc: bashrc
-    ~/.bash_profile: bash_profile
     ~/.gitconfig: gitconfig
-    ~/.ssh/config:
-        path: ssh/config
-        create: true
+    ~/.skhdrc: skhdrc
+    ~/.yabairc: yabairc
     ~/.vimrc: vimrc
-    ~/.zprofile: zprofile
+    ~/.config/nvim/lua/custom:
+      force: true
+      path: nvim
     ~/.zshrc: zshrc
