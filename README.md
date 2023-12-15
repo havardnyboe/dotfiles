@@ -1,37 +1,14 @@
 # Dotfiles
 
-This repository contains dotfiles with some of my settings, configurations and templates
+Et forsøk på å organisere dotfilene mine på en forsvarlig måte.
 
-## Installation
+Bruker [dotbot](https://github.com/anishathalye/dotbot) for å linke filene til riktig sted.
 
-### Clone repository
+## Installer
 
-1. Clone the repo to a hidden directory
+Klon repoet til `~/.dotfiles` og kjør installasjonsskriptet.
 
 ```zsh
 git clone git@github.com:havardnyboe/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
+./install
 ```
-
-2. Run the install script
-
-```zsh
-chmod +x install.sh && ./install.sh
-```
-
-### Symbolic link to latex template
-
-```zsh
-ln -s ~/.dotfiles/template/template.tex ./
-```
-
-## Aliases
-
-| Alias   | Command                                   |
-| ------- | ----------------------------------------- |
-| dl      | `cd ~/Downloads`                          |
-| doc     | `cd ~/Documents`                          |
-| dt      | `cd ~/Desktop`                            |
-| update  | `sudo apt update`                         |
-| upgrade | `sudo apt upgrade -y`                     |
-| mklatex | `cp ~/.dotfiles/template/template.tex ./` |
-| week    | `date +%V`                                |
