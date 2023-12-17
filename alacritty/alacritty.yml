@@ -1,0 +1,29 @@
+live_config_reload: true
+
+window:
+  opacity: 0.94
+  padding:
+    x: 16
+    y: 14
+  dynamic_padding: true
+  decorations: buttonless
+
+font:
+  normal:
+    family: "MesloLGS NF"
+    style: Regular
+  size: 13.0
+
+colors:
+  primary:
+    background: "0x202020"
+    foreground: "0xd0d0d0"
+  normal:
+    black: "0x151515"
+    red: "0xac4142"
+    green: "0x7ACC52"
+    yellow: "0xe5b566"
+    blue: "0x6c99ba"
+    magenta: "0x9e4e85"
+    cyan: "0x7dd5cf"
+    white: "0xd0d0d0"

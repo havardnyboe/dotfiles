@@ -43,16 +43,16 @@ shift + alt - r: yabai -m space --rotate 90
 alt - e: yabai -m space --rotate 180
 
 # make floating window fill screen
-ctrl + alt - up: yabai -m window --grid 1:1:0:0:1:1
+# ctrl + alt - up: yabai -m window --grid 1:1:0:0:1:1
 
 # make floating window fill left-half of screen
-ctrl + alt - left: yabai -m window --grid 1:2:0:0:1:1
+# ctrl + alt - left: yabai -m window --grid 1:2:0:0:1:1
 
 # make floating window fill right-half of screen
-ctrl + alt - right: yabai -m window --grid 1:2:1:0:1:1
+# ctrl + alt - right: yabai -m window --grid 1:2:1:0:1:1
 
 # center floating window
-ctrl + alt - c: yabai -m window --grid 4:4:1:1:2:2
+# ctrl + alt - c: yabai -m window --grid 4:4:1:1:2:2
 
 # send window to desktop and follow focus
 shift + cmd - 1: yabai -m window --space 1; yabai -m space --focus 1
@@ -68,8 +68,8 @@ shift + cmd - 0: yabai -m window --space 10; yabai -m space --focus 10
 
 # focus monitor
 ctrl + alt - x: yabai -m display --focus recent
-ctrl + alt - z: yabai -m display --focus prev
-ctrl + alt - c: yabai -m display --focus next
+# ctrl + alt - z: yabai -m display --focus prev
+# ctrl + alt - c: yabai -m display --focus next
 ctrl + alt - 1: yabai -m display --focus 1
 ctrl + alt - 2: yabai -m display --focus 2
 ctrl + alt - 3: yabai -m display --focus 3

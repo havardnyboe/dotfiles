@@ -3,17 +3,19 @@
       create: true
       relink: true
 
-- clean: ['~' , '~/.config/nvim/lua/custom']
+- clean: ['~' , '~/.config']
 
 - link:
+    ~/.config/alacritty: alacritty
     ~/.bashrc: bashrc
+    ~/.config/borders: borders
     ~/.gitconfig: gitconfig
-    ~/.skhdrc: skhdrc
-    ~/.yabairc: yabairc
-    ~/.vimrc: vimrc
     ~/.config/nvim/lua/custom:
       force: true
       path: nvim
+    ~/.config/skhd: skhd
+    ~/.vimrc: vimrc
+    ~/.config/yabai: yabai
     ~/.zshrc: zshrc
 
 - shell:
