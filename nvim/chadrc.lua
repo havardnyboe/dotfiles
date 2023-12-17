@@ -2,8 +2,8 @@
 local M = {}
 
 M.ui = {
-  theme = "doomchad",
-  theme_toggle = { "doomchad", "one_light" },
+  theme = "github_dark",
+  theme_toggle = { "github_dark", "one_light" },
 }
 
 return M
