@@ -44,4 +44,7 @@ config=(
 )
 yabai -m config "${config[@]}"
 
+# menu bar offset 
+yabai -m config external_bar all:$(sketchybar --query bar | jq .height):0
+
 echo "yabai configuration loaded.."
