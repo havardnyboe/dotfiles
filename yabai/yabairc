@@ -44,7 +44,8 @@ config=(
 )
 yabai -m config "${config[@]}"
 
-# menu bar offset 
-yabai -m config external_bar all:$(sketchybar --query bar | jq .height):0
+# sketchybar offset 
+# yabai -m config external_bar all:$(sketchybar --query bar | jq ".height, .y_offset" | awk '{s+=$1} END {print s}'):0
+# yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
 
 echo "yabai configuration loaded.."

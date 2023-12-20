@@ -75,10 +75,10 @@ ctrl + alt - 2: yabai -m display --focus 2
 ctrl + alt - 3: yabai -m display --focus 3
 
 # float / unfloat window and restore position
-alt - t: yabai -m window --toggle float --grid 4:4:1:1:2:2
+alt - t: yabai -m window --toggle float --grid 4:4:1:1:2:2; sketchybar --trigger window_focus
 
 # toggle fullscreen
-alt - f: yabai -m window --toggle zoom-fullscreen
+alt - f: yabai -m window --toggle zoom-fullscreen; sketchybar --trigger window_focus
 
 # toggle padding and gap
 alt - p: yabai -m space --toggle padding && yabai -m space --toggle gap
