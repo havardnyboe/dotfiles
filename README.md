@@ -22,7 +22,7 @@ cd ~/.dotfiles
 brew bundle --file ~/.dotfiles/Brewfile
 ```
 
-## NeoVim
+## Neovim
 
 NeoVim er konfigurert til å bruke [NvChad](https://github.com/NvChad/NvChad), mulig jeg finner på noe eget etterhvert.
 
