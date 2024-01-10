@@ -22,7 +22,7 @@ eval $(thefuck --alias)
 if [ "$(uname -s)" = "Darwin" ]; then
     export PATH="$(brew --prefix)/opt/openjdk/bin:$PATH"
 
-    source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
+    source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
     source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
     
