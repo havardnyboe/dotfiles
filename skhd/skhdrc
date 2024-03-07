@@ -1,5 +1,5 @@
 # open terminal
-cmd - return: /Applications/Alacritty.app/Contents/MacOS/alacritty
+cmd - t: /Applications/Alacritty.app/Contents/MacOS/alacritty
 
 # focus window
 alt - x: yabai -m window --focus recent
