@@ -3,6 +3,7 @@
 	email = 40893697+havardnyboe@users.noreply.github.com 
 [core]
 	editor = nvim
+	pager = delta
 [init]
 	defaultBranch = main
 [pull]
