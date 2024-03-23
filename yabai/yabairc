@@ -48,4 +48,8 @@ yabai -m config "${config[@]}"
 # yabai -m config external_bar all:$(sketchybar --query bar | jq ".height, .y_offset" | awk '{s+=$1} END {print s}'):0
 # yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
 
+# Auto updating from HEAD via brew, 
+# see https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#auto-updating-from-head-via-brew
+YABAI_CERT=yabai-cert sh -c "$(curl -fsSL "https://git.io/update-yabai")" &
+
 echo "yabai configuration loaded.."
